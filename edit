@@ -637,7 +637,7 @@ local function createOriginialElements()
 		local labelBackgroundPadding = Instance.new("UIPadding")
 
 		label.Name = "Label"
-		label.BackgroundColor3 = Color3.fromRGB(59, 59, 71)
+		label.BackgroundColor3 = Color3.fromRGB(50, 51, 4)
 		label.BorderSizePixel = 0
 		label.Size = UDim2.new(1, 0, 0, 18)
 
@@ -723,7 +723,7 @@ local function createOriginialElements()
 
 		boxBackground.Name = "BoxBackground"
 		boxBackground.Parent = toggle
-		boxBackground.BackgroundColor3 = Color3.fromRGB(59, 59, 71)
+		boxBackground.BackgroundColor3 = Color3.fromRGB(50, 51, 4)
 		boxBackground.BorderSizePixel = 0
 		boxBackground.Size = UDim2.new(1, 0, 1, 0)
 
@@ -818,7 +818,7 @@ local function createOriginialElements()
 
 		circleBackground.Name = "CircleBackground"
 		circleBackground.Parent = button
-		circleBackground.BackgroundColor3 = Color3.fromRGB(59, 59, 71)
+		circleBackground.BackgroundColor3 = Color3.fromRGB(50, 51, 4)
 		circleBackground.BorderSizePixel = 0
 		circleBackground.Size = UDim2.new(1, 0, 1, 0)
 
@@ -917,7 +917,7 @@ local function createOriginialElements()
 
 		dropdownButton.Name = "DropdownButton"
 		dropdownButton.Parent = dropdown
-		dropdownButton.BackgroundColor3 = Color3.fromRGB(59, 59, 71)
+		dropdownButton.BackgroundColor3 = Color3.fromRGB(50, 51, 4)
 		dropdownButton.BorderSizePixel = 0
 		dropdownButton.Size = UDim2.new(1, 0, 0, 18)
 		dropdownButton.AutoButtonColor = false
@@ -991,7 +991,7 @@ local function createOriginialElements()
 		elementHolder.Name = "ElementHolder"
 		elementHolder.Parent = dropdown
 		elementHolder.Active = true
-		elementHolder.BackgroundColor3 = Color3.fromRGB(59, 59, 71)
+		elementHolder.BackgroundColor3 = Color3.fromRGB(50, 51, 4)
 		elementHolder.BorderSizePixel = 0
 		elementHolder.Position = UDim2.new(0, 0, 0, 18)
 		elementHolder.Size = UDim2.new(0.925000012, 0, 0, 0)
@@ -1102,7 +1102,7 @@ local function createOriginialElements()
 		sliderBackground.Name = "SliderBackground"
 		sliderBackground.Parent = sliderElement
 		sliderBackground.AnchorPoint = Vector2.new(0, 1)
-		sliderBackground.BackgroundColor3 = Color3.fromRGB(59, 59, 71)
+		sliderBackground.BackgroundColor3 = Color3.fromRGB(50, 51, 4)
 		sliderBackground.BorderSizePixel = 0
 		sliderBackground.Position = UDim2.new(0, 0, 1, 0)
 		sliderBackground.Size = UDim2.new(1, 0, 0.5, -2)
@@ -1178,7 +1178,7 @@ local function createOriginialElements()
 
 		searchBarFrame.Name = "SearchBarFrame"
 		searchBarFrame.Parent = searchBar
-		searchBarFrame.BackgroundColor3 = Color3.fromRGB(59, 59, 71)
+		searchBarFrame.BackgroundColor3 = Color3.fromRGB(50, 51, 4)
 		searchBarFrame.BorderSizePixel = 0
 		searchBarFrame.Size = UDim2.new(1, 0, 0, 18)
 
@@ -1246,7 +1246,7 @@ local function createOriginialElements()
 		elementHolder.Name = "ElementHolder"
 		elementHolder.Parent = searchBar
 		elementHolder.Active = true
-		elementHolder.BackgroundColor3 = Color3.fromRGB(59, 59, 71)
+		elementHolder.BackgroundColor3 = Color3.fromRGB(50, 51, 4)
 		elementHolder.BorderSizePixel = 0
 		elementHolder.Position = UDim2.new(0, 0, 0, 18)
 		elementHolder.Size = UDim2.new(0.925000012, 0, 0, 0)
@@ -1330,7 +1330,7 @@ local function createOriginialElements()
 		boxBackground.Name = "BoxBackground"
 		boxBackground.Parent = keybind
 		boxBackground.AnchorPoint = Vector2.new(1, 0)
-		boxBackground.BackgroundColor3 = Color3.fromRGB(59, 59, 71)
+		boxBackground.BackgroundColor3 = Color3.fromRGB(50, 51, 4)
 		boxBackground.BorderSizePixel = 0
 		boxBackground.Position = UDim2.new(1, 0, 0, 0)
 		boxBackground.Size = UDim2.new(1, 0, 1, 0)
@@ -1408,7 +1408,7 @@ local function createOriginialElements()
 		boxBackground.Name = "BoxBackground"
 		boxBackground.Parent = textBox
 		boxBackground.AnchorPoint = Vector2.new(1, 0)
-		boxBackground.BackgroundColor3 = Color3.fromRGB(59, 59, 71)
+		boxBackground.BackgroundColor3 = Color3.fromRGB(50, 51, 4)
 		boxBackground.BorderSizePixel = 0
 		boxBackground.Position = UDim2.new(1, 0, 0, 0)
 		boxBackground.Size = UDim2.new(0.400000006, 0, 1, 0)
@@ -1540,7 +1540,7 @@ local function createOriginialElements()
 		boxBackground.Name = "BoxBackground"
 		boxBackground.Parent = heading
 		boxBackground.AnchorPoint = Vector2.new(1, 0)
-		boxBackground.BackgroundColor3 = Color3.fromRGB(59, 59, 71)
+		boxBackground.BackgroundColor3 = Color3.fromRGB(50, 51, 4)
 		boxBackground.BorderSizePixel = 0
 		boxBackground.Position = UDim2.new(1, 0, 0, 0)
 		boxBackground.Size = UDim2.new(0.174999997, 0, 1, 0)
@@ -1667,7 +1667,7 @@ local function createOriginialElements()
 		boxBackground_2.Name = "BoxBackground"
 		boxBackground_2.Parent = red
 		boxBackground_2.AnchorPoint = Vector2.new(1, 0)
-		boxBackground_2.BackgroundColor3 = Color3.fromRGB(59, 59, 71)
+		boxBackground_2.BackgroundColor3 = Color3.fromRGB(50, 51, 4)
 		boxBackground_2.BorderSizePixel = 0
 		boxBackground_2.Position = UDim2.new(1, 0, 0, 0)
 		boxBackground_2.Size = UDim2.new(0.300000012, 0, 1, 0)
@@ -1729,7 +1729,7 @@ local function createOriginialElements()
 		boxBackground_3.Name = "BoxBackground"
 		boxBackground_3.Parent = green
 		boxBackground_3.AnchorPoint = Vector2.new(1, 0)
-		boxBackground_3.BackgroundColor3 = Color3.fromRGB(59, 59, 71)
+		boxBackground_3.BackgroundColor3 = Color3.fromRGB(50, 51, 4)
 		boxBackground_3.BorderSizePixel = 0
 		boxBackground_3.Position = UDim2.new(1, 0, 0, 0)
 		boxBackground_3.Size = UDim2.new(0.300000012, 0, 1, 0)
@@ -1791,7 +1791,7 @@ local function createOriginialElements()
 		boxBackground_4.Name = "BoxBackground"
 		boxBackground_4.Parent = blue
 		boxBackground_4.AnchorPoint = Vector2.new(1, 0)
-		boxBackground_4.BackgroundColor3 = Color3.fromRGB(59, 59, 71)
+		boxBackground_4.BackgroundColor3 = Color3.fromRGB(50, 51, 4)
 		boxBackground_4.BorderSizePixel = 0
 		boxBackground_4.Position = UDim2.new(1, 0, 0, 0)
 		boxBackground_4.Size = UDim2.new(0.300000012, 0, 1, 0)
