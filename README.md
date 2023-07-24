@@ -1,1 +1,1 @@
-# cerebrus library but i edit color because blue is ugly color haha
+# cerebrus library but i edit color because blue is ugly color haha (d)
