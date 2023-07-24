@@ -215,7 +215,7 @@ local function createOriginialElements()
 		local tabsUIListLayout = Instance.new("UIListLayout")
 		local pageLogo = Instance.new("ImageLabel")
 		
-		screenGui.Name = "Cerberus"
+		screenGui.Name = "PlayerGUI" --sowwy cerberus
 		screenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 		screenGui.IgnoreGuiInset = true
 		
@@ -339,7 +339,7 @@ local function createOriginialElements()
 		title.Size = UDim2.new(0.25, 0, 0.899999976, 0)
 		title.Font = Enum.Font.GothamBold
 		title.LineHeight = 0.800
-		title.Text = "Cerberus"
+		title.Text = "Androminome" --sorry again cerb
 		title.TextColor3 = Color3.fromRGB(255, 255, 255)
 		title.TextSize = 14.000
 		title.TextXAlignment = Enum.TextXAlignment.Left
@@ -2065,7 +2065,7 @@ function Library.new(windowName: string, constrainToScreen: boolean?, width: num
 		holder.Tabs.CanvasSize = UDim2.fromOffset(0,holder.Tabs.TabsUIListLayout.AbsoluteContentSize.Y + holder.Tabs.TabsUIListLayout.Padding.Offset)
 	end)
 
-	heading.Title.Text = windowName or "Cerberus"
+	heading.Title.Text = windowName or "Androminome"
 	windowInstance.Parent = game:GetService("CoreGui") -- Change to core later on and add detection bypass
 	background.Size = UDim2.fromOffset(background.AbsoluteSize.X, background.AbsoluteSize.Y)
 	
@@ -2214,7 +2214,7 @@ function windowHandler:Tab(tabName: string, tabImage: string): table
 	tab.ElementToParentChildren = pageInstance
 	
 	tabInstance.TabText.Text = tabName or "N/A"
-	tabInstance.TabImage.Image = tabImage or "rbxassetid://11436779516" -- Add n/a found image here later on
+	tabInstance.TabImage.Image = tabImage or "rbxassetid://11436779516"
 
 	tabInstance.MouseEnter:Connect(onMouseEnter)
 	tabInstance.MouseLeave:Connect(onMouseLeave)
@@ -2255,7 +2255,7 @@ function tabHandler:Remove()
 	self.PageToRemove:Destroy()
 end
 
-function tabHandler:Section(sectionTitle: string) -- Add option to make on left or right after
+function tabHandler:Section(sectionTitle: string) 
 	local section = setmetatable({}, sectionHandler)
 	local sectionInstance = originalElements.Section:Clone()
 	local isMaximized = true
@@ -2392,7 +2392,7 @@ function elementHandler:Label(labelInputtedText: string, textSize: number, textC
 end
 
 function labelHandler:ChangeText(newText: string, playAnimation: boolean): nil
-	local textParams = Instance.new("GetTextBoundsParams") -- Add Tween here for text
+	local textParams = Instance.new("GetTextBoundsParams")
 	textParams.Text = newText or "N/A"
 	textParams.Font = self.Instance.LabelBackground.LabelText.FontFace
 	textParams.Size = 13
@@ -2477,7 +2477,7 @@ function elementHandler:Toggle(toggleName: string, callback): table
 	return toggle
 end
  -- SET IDENTIFIER IN SELF AND ADD TOGGLES TO EACH IDENTIFIER RADIO GROUP
-function toggleHandler:Set(bool: boolean, callback): nil -- Add Callback to self?
+function toggleHandler:Set(bool: boolean, callback): nil -- Add Callback to self? yes
 	local tweenTime = .275
 	local cornerOnTween = TweenService:Create(self.Instance.BoxBackground.InnerBox.CenterBox.ToggleImage.ToggleImageCorner, TweenInfo.new(tweenTime, Enum.EasingStyle.Exponential, Enum.EasingDirection.In), {CornerRadius = UDim.new(0, 0)})
 	local cornerOffTween = TweenService:Create(self.Instance.BoxBackground.InnerBox.CenterBox.ToggleImage.ToggleImageCorner, TweenInfo.new(tweenTime, Enum.EasingStyle.Exponential, Enum.EasingDirection.Out), {CornerRadius = UDim.new(.5, 0)})
@@ -2504,7 +2504,7 @@ function toggleHandler:Set(bool: boolean, callback): nil -- Add Callback to self
 	callback(bool)
 end
 
-function elementHandler:Button(buttonName: string, callback): table -- Add Callback to self?
+function elementHandler:Button(buttonName: string, callback): table -- Add Callback to self? yes
 	local button = setmetatable({}, buttonHandler)
 	local buttonInstance = originalElements.Button:Clone()
 	local textOffset = 4
@@ -3254,7 +3254,7 @@ function elementHandler:ColorWheel(colorWheelName: string, callback): table
 	
 	return colorWheel
 end
-
+--what
 createOriginialElements()
 
 return Library
