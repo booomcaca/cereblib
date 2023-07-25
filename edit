@@ -229,18 +229,14 @@ local function createOriginialElements()
 		background.Size = UDim2.new(0.5, 0, 0.600000024, 0)
 
 		local isVisible = true
-local function toggleBackground()
-    isVisible = not isVisible
-    background.Visible = isVisible
-end
-game:GetService("UserInputService").InputBegan:Connect(function(input, isProcessed)
-    if isProcessed then
-        return
-    end
-    if input.KeyCode == Enum.KeyCode.V then
-        toggleBackground()
-    end
-end)
+		local function toggleBackground()
+    		isVisible = not isVisible
+    		background.Visible = isVisible end
+		game:GetService("UserInputService").InputBegan:Connect(function(input, isProcessed)
+    		if isProcessed then return end
+    		if input.KeyCode == Enum.KeyCode.V then
+        	toggleBackground() end end)
+
 		backgroundAspectRatioConstraint.Name = "BackgroundUIAspectRatioConstraint"
 		backgroundAspectRatioConstraint.Parent = background
 		backgroundAspectRatioConstraint.AspectRatio = 1.531
