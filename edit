@@ -1,10 +1,9 @@
---library by jxereas  /his discord server (https://discord.gg/9RnpUjNMbF)/
-_G.JxereasExistingHooks = _G.JxereasExistingHooks or {}
-if not _G.JxereasExistingHooks.GuiDetectionBypass then
+	--library by jxereas  /his discord server (https://discord.gg/9RnpUjNMbF)/
+	_G.JxereasExistingHooks = _G.JxereasExistingHooks or {}
+	if not _G.JxereasExistingHooks.GuiDetectionBypass then
     local CoreGui = game.CoreGui
     local ContentProvider = game.ContentProvider
     local RobloxGuis = {"RobloxGui", "TeleportGui", "RobloxPromptGui", "RobloxLoadingGui", "PlayerList", "RobloxNetworkPauseNotification", "PurchasePrompt", "HeadsetDisconnectedDialog", "ThemeProvider", "DevConsoleMaster"}
-    
     local function FilterTable(tbl)
         local context = syn_context_get()
         syn_context_set(7)
@@ -33,7 +32,6 @@ if not _G.JxereasExistingHooks.GuiDetectionBypass then
                     if not CoreGui:IsAncestorOf(v) then
                         table.insert(new, v)
                     else
-                        --don't insert it if it's a descendant of a different gui than default roblox guis
                         for j,k in pairs(RobloxGuis) do
                             local gui = CoreGui:FindFirstChild(k)
                             if gui then
@@ -50,14 +48,11 @@ if not _G.JxereasExistingHooks.GuiDetectionBypass then
         syn_context_set(context)
         return new
     end
-    
     local old
     old = hookfunc(ContentProvider.PreloadAsync, function(self, tbl, cb)
         if self ~= ContentProvider or type(tbl) ~= "table" or type(cb) ~= "function" then --note: callback can be nil but in that case it's useless anyways
             return old(self, tbl, cb)
         end
-    
-        --check for any errors that I might've missed (such as table being {[2] = "something"} which causes "Unable to cast to Array")
         local err
         task.spawn(function() --TIL pcalling a C yield function inside a C yield function is a bad idea ("cannot resume non-suspended coroutine")
             local s,e = pcall(old, self, tbl)
@@ -73,7 +68,6 @@ if not _G.JxereasExistingHooks.GuiDetectionBypass then
         tbl = FilterTable(tbl)
         return old(self, tbl, cb)
     end)
-    
     local old
     old = hookmetamethod(game, "__namecall", function(self, ...)
         local method = getnamecallmethod()
